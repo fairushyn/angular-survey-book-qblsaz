@@ -3,13 +3,8 @@ import {Component} from '@angular/core';
 const surveys = [{
   id: 1,
   questions: [{
-    question: 'On the scale of 1 to 10, what would you rate this course?',
+    question: 'Оцінка роботи менеджера ?',
     options: [
-      {value: 10, label: 10},
-      {value: 9, label: 9},
-      {value: 8, label: 8},
-      {value: 7, label: 7},
-      {value: 6, label: 6},
       {value: 5, label: 5},
       {value: 4, label: 4},
       {value: 3, label: 3},
@@ -17,7 +12,48 @@ const surveys = [{
       {value: 1, label: 1},
     ],
     type: 'radio',
-  }, {
+  },
+  {
+    question: 'Оцінка теннічного розрахунку TALsoft ?',
+    options: [
+      {value: 5, label: 5},
+      {value: 4, label: 4},
+      {value: 3, label: 3},
+      {value: 2, label: 2},
+      {value: 1, label: 1},
+    ],
+    type: 'radio',
+  }, 
+  { question: 'Оцінка роботи відділу відвантаження ?',
+    options: [
+      {value: 5, label: 5},
+      {value: 4, label: 4},
+      {value: 3, label: 3},
+      {value: 2, label: 2},
+      {value: 1, label: 1},
+    ],
+  }, 
+   { question: 'Оцінка швидкості виписки рахукну ?',
+      options: [
+      {value: 5, label: 5},
+      {value: 4, label: 4},
+      {value: 3, label: 3},
+      {value: 2, label: 2},
+      {value: 1, label: 1},
+    ],
+  }, 
+  /* Оцінка закомплектованого замовлення (за якістю пакування,за кількістю правильно зкомплектованих позицій, за зрозумілістю підписаних номенклатурних номерів) */
+
+  { question: 'Оцінка швидкості виписки рахукну ?',
+      options: [
+      {value: 5, label: 5},
+      {value: 4, label: 4},
+      {value: 3, label: 3},
+      {value: 2, label: 2},
+      {value: 1, label: 1},
+    ],
+  }, 
+   {
     question: 'What do you like the most about this course?',
     type: 'text'
   }, {
@@ -41,7 +77,7 @@ const surveys = [{
   styleUrls: ['toolbar-overview-example.css'],
 })
 export class ToolbarOverviewExample {
-    seasons: number[] = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+    seasons: number[] = [5, 4, 3, 2, 1];
     questions = surveys[0].questions;
 }
 
